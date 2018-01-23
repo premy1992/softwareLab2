@@ -1,0 +1,17 @@
+Write two separate C program, one for TCP concurrent server (single server handling multiple clients simultaneously, that can be done using fork() system call) and other one for client for the following problem -
+
+Consider two processes, namely P_Request (Client) and P_Search (Server).
+Server waits on a particular port and accepts requests from Client process(es). The server should not stop after serving the request from any client and should wait for other client requests. 
+Establish connection between Server and Client.
+Client process reads a string of characters [maximum 30 chars (a-z, A-Z, blank) terminated by “;”] and a search keyword [maximum 5 chars (a-z, A-Z)] and sends to the Server process.
+Server process searches the subsequent occurrences of the keyword (case sensitive) in the input string and returns the number of occurrences (0 or more) of the keyword to the Client process.
+Client displays the input string, keyword and the number of occurrences on the screen.
+Marking Scheme
+
+Total - 100 Marks.
+Establishing connection between server and client - 25 Marks.
+Finding occurrences of keyword - 25 Marks.
+Maintain concurrency - 15 Marks.
+Coding style - 10 Marks.
+Understanding of the assignment (Viva) - 15 Marks.
+Test Report (Black-box Testing, Test Cases & Test Report) - 10 Marks.
